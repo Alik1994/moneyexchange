@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>MoneyExchange</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header-top">
+      <a href="#">
+        <img src="img/logo.svg" alt="Logo" class="logo">
+      </a>
+      <nav class="main-nav">
+        <ul class="list">
+          <li class="list-item">
+            <a href="#" class="item-link">Компания</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="item-link">Блог</a>
+          </li>
+          <li class="list-item">
+            <a href="#" class="item-link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="buttons">
+        <button class="btn btn-enter">
+          <span class="btn-text">Вход</span>
+        </button>
+        <button class="btn btn-register">
+          <span class="btn-text">Регистрация</span>
+        </button>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="title-block">
+        <h1 class="title">Мультивалютный обменный сервис 24/7</h1>
+        <p class="comment">Быстрый обмен без скрытых комиссий</p>
+      </div>
+      <div class="exchanger">
+        <div class="give">
+          <h2 class="ex-title">Вы отдаете</h2>
+          <p class="total">Сумма</p>
+          <div class="form">
+            <input type="number" id="give-total" min="0.01" max="99999" step="0.01" value="1000.00"  class="give-input" required>
+            <div class="help">
+              <label for="give-total" class="help-text">Введите значение в формате 0.00</label>
+            </div>
+            <div class="line"></div>
+            <img src="img/sber-icon.png" alt="Sber logo" class="bank-icon">
+            <select name="currency" id="give-currency" class="currency">
+              <option value="RUB">RUB</option>
+              <option value="USD">USD</option>
+              <option value="EUR">EUR</option>
+            </select>
+          </div>
+        </div>
+        <button class="swap">
+          <img src="img/exch-symbol.svg" class="exch-simbol">
+        </button>
+        <div class="get">
+          <h2 class="ex-title">Вы получаете <span class="get-title">c учетом комиссии ПС (0.5%)</span></h2>
+          <p class="total">Сумма</p>
+          <div class="form">
+            <input type="number" id="get-total" min="0.01" max="99999" step="0.01" value="970.00" required>
+            <div class="line"></div>
+            <img src="img/yndx-icon.png" alt="Yandex Money logo" class="bank-icon">
+            <select name="currency" id="get-currency" class="currency">
+              <option value="RUB">RUB</option>
+              <option value="USD">USD</option>
+              <option value="EUR">EUR</option>
+            </select> 
+          </div>
+        </div>
+        <button class="btn-ex">Обменять</button>
+        <div class="shadow-1"></div>
+        <div class="shadow-2"></div>
+      </div>
+    </div>
+  </header>
+  <section class="features">
+    <div class="feature">
+      <img src="img/feature-1.png" alt="" class="feature-img">
+      <div>
+        <h2 class="feature-title">Безопасность</h2>
+        <p class="feature-text ft-text-1">
+          Усиленная безопасность ваших обменов, усиленная безопасность от мошенников!
+        </p>
+      </div>
+    </div>
+    <!-- /.feature -->
+    <div class="feature">
+      <img src="img/feature-2.png" alt="" class="feature-img">
+      <div>
+        <h2 class="feature-title">Реферальная система</h2>
+        <p class="feature-text ft-text-2">
+          На сервисе работает партнерская программа , за каждый обмен приведенного вами клиента, вы получаете 0.5% с нашей прибыли.
+        </p>
+      </div>
+    </div>
+    <!-- /.feature -->
+    <div class="feature">
+      <img src="img/feature-3.png" alt="" class="feature-img">
+      <div>
+        <h2 class="feature-title">Онлайн поддержка</h2>
+      <p class="feature-text ft-text-3">
+        Четыре вида поддержки для наших клиентов:  Телеграмм канал, E-mail поддержка, и мобильный номер (Viber).
+      </p>
+      </div>
+    </div>
+    <!-- /.feature -->
+  </section>
+  <section class="warranty-and-reserve">
+    <div class="warranty-block">
+      <h2 class="warranty-title">Сервис обмена электронных валют с 5-летней историей</h2>
+      <p class="warranty-text">За время работы мы приобрели репутацию проверенного партнера и делаем все возможное, чтобы ваши впечатления от нашего сервиса были только благоприятными.</p>
+      <img src="img/sticker-warranty.png"  class="sticker">
+    </div>
+    <div class="reserve-block">
+      <h2 class="reserve-title">Резерв валюты</h2>
+      <div class="currency-reserve">
+        <div class="bank-reserve">
+          <div class="bank-res-logo yandex">
+            <img src="img/yndx-logo.png" alt="Yandex" class="bank-logo">
+          </div>
+          <div class="reserve-info">
+            <h3 class="name-bank">Yandex RUB</h3>
+            <p class="value-reserve">900549</p>
+          </div>
+        </div>
+        <!-- /.bank-reserve -->
+        <div class="bank-reserve">
+          <div class="bank-res-logo ethereum">
+            <img src="img/ethereum-logo.png" alt="Ethereum" class="bank-logo">
+          </div>
+          <div class="reserve-info">
+            <h3 class="name-bank">Ethereum ETH</h3>
+            <p class="value-reserve">123</p>
+          </div>
+        </div>
+        <!-- /.bank-reserve -->
+        <div class="bank-reserve">
+          <div class="bank-res-logo bitcoin">
+            <img src="img/bitcoin-logo.png" alt="Bitcoin" class="bank-logo">
+          </div>
+          <div class="reserve-info">
+            <h3 class="name-bank">Bitcoin BTC</h3>
+            <p class="value-reserve">0.63333439</p>
+          </div>
+        </div>
+        <!-- /.bank-reserve -->
+        <div class="bank-reserve">
+          <div class="bank-res-logo sber">
+            <img src="img/sber-logo.png" alt="Sberbank" class="bank-logo">
+          </div>
+          <div class="reserve-info">
+            <h3 class="name-bank">Сбербанк  RUB</h3>
+            <p class="value-reserve">142666</p>
+          </div>
+        </div>
+        <!-- /.bank-reserve -->
+        <div class="bank-reserve">
+          <div class="bank-res-logo privat">
+            <img src="img/privat-logo.png" alt="Privat" class="bank-logo">
+          </div>
+          <div class="reserve-info">
+            <h3 class="name-bank">Приват 24 UAH</h3>
+            <p class="value-reserve">142666</p>
+          </div>
+        </div>
+        <!-- /.bank-reserve -->
+        <div class="bank-reserve">
+          <div class="bank-res-logo paypal">
+            <img src="img/paypal-logo.png" alt="PayPal" class="bank-logo">
+          </div>
+          <div class="reserve-info">
+            <h3 class="name-bank">PayPal USD</h3>
+            <p class="value-reserve">5139.58</p>
+          </div>
+        </div>
+        <!-- /.bank-reserve -->
+        <div class="bank-reserve">
+          <div class="bank-res-logo pm">
+            <img src="img/PM-logo.png" alt="PM" class="bank-logo">
+          </div>
+          <div class="reserve-info">
+            <h3 class="name-bank">PM USD</h3>
+            <p class="value-reserve">3192.22</p>
+          </div>
+        </div>
+        <!-- /.bank-reserve -->
+        <div class="bank-reserve">
+          <div class="bank-res-logo qiwi">
+            <img src="img/qiwi-logo.png" alt="Qiwi" class="bank-logo">
+          </div>
+          <div class="reserve-info">
+            <h3 class="name-bank">Qiwi RUB</h3>
+            <p class="value-reserve">99243.321</p>
+          </div>
+        </div>
+        <!-- /.bank-reserve -->
+      </div>
+    </div>
+  </section>
+  <section class="about-us">
+    <h2 class="about-us-title">Что клиенты говорят о нас</h2>
+    <div class="reviews">
+      <div class="review">
+        <p class="review-text">Киви переправил деньги не на кошелек а на номер мтс будьте внимательны.даже в этом случаи делают возврат и переводят на приват.особая благодарность оператору Марии.</p>
+        <div class="review-author-and-date">
+          <p class="review-author">Jacob Robertson</p>
+          <p class="review-date">20.02.2020, 12:10</p>
+        </div>
+      </div>
+      <!-- /.review -->
+      <div class="review">
+        <p class="review-text">3-й раз выполняю обмен. все как всегда на отлично! транзакции выполняются в течение 15-20 мин. что очень быстро + лучший ценник!</p>
+        <div class="review-author-and-date">
+          <p class="review-author">Morris Robertson</p>
+          <p class="review-date">17.02.2020, 18:51</p>
+        </div>
+      </div>
+      <!-- /.review -->
+    </div>
+    <div class="review-buttons">
+      <button class="review-btn btn-inactive">
+        <img src="img/arrow-inactive.svg" alt="" class="inactive">
+      </button>
+      <button class="review-btn">
+        <img src="img/arrow-active.svg" alt="" class="active">
+      </button>
+    </div>
+  </section>
+  <section class="lets-start">
+    <div class="lets-start-img">
+      <img src="img/lets-start-img.png" alt="" class="start-image">
+    </div>
+    <div class="lets-start-info">
+      <h2 class="lets-start-title">Будем рады предоставить Вам качественный обмен валют на нашем сервисе!</h2>
+      <p class="lets-start-text">Начните обмен прямо сейчас</p>
+      <button class="lets-start-btn">Начать обмен</button>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-top">
+      <a href="#">
+        <img src="img/logo.svg" alt="Logo" class="logo">
+      </a>
+      <div class="footer-menu">
+        <ul class="list">
+          <li class="item">
+            <a href="#" class="item-link">Карта сайта</a>
+          </li>
+          <li class="item">
+            <a href="#" class="item-link">Предупреждение</a>
+          </li>
+          <li class="item">
+            <a href="#" class="item-link">Правила сайта</a>
+          </li>
+          <li class="item">
+            <a href="#" class="item-link">Обмен</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-media">
+        <a href="#" class="media-link">
+          <img src="img/vk-icon.svg" alt="VK">
+        </a>
+        <a href="#" class="media-link">
+          <img src="img/fb-icon.svg" alt="Facebook">
+        </a>
+        <a href="#" class="media-link">
+          <img src="img/inst-icon.svg" alt="Instagramm">
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-text">Сервис обмена электронных валют</p>
+    </div>
+  </footer>
+</body>
+</html>
